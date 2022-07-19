@@ -1,5 +1,5 @@
 const sumAll = function(from, to) {
-    if (typeof from != "number" || typeof to != "number") {
+    if (typeof from != "number" || typeof to != "number" || from < 0 || to < 0) {
         return "ERROR";
     }
 
