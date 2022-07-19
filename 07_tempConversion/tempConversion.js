@@ -4,8 +4,10 @@ const ftoc = function(temperature) {
   return temperature;
 };
 
-const ctof = function() {
-
+const ctof = function(temperature) {
+  temperature = (temperature * 9 / 5) + 32;
+  temperature = Math.round(temperature * 10) / 10;
+  return temperature;
 };
 
 // Do not edit below this line
