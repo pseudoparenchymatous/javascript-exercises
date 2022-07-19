@@ -1,7 +1,9 @@
 const palindromes = function (string) {
     let rawString = '';
+
+    string = string.toUpperCase();
     for (char of string) {
-        if ((char >= 'a' && char <= 'z') || (char <= 'A' && char >= 'Z')) {
+        if (char >= 'A' && char <= 'Z') {
             rawString += char;
         }
     }
