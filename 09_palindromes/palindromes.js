@@ -11,7 +11,7 @@ const palindromes = function (string) {
         palindrome += rawString[i];
     }
 
-    if (string === rawString) {
+    if (palindrome === rawString) {
         return true;
     } else {
         return false;
